@@ -1,0 +1,45 @@
+<div class="rooms-container">
+  <!-- Rooms Section -->
+  <div class="rooms-section">
+    <h3 class="section-title">{{ 'ROOMS_TITLE' | translate }}</h3>
+    <p class="section-description">{{ 'ROOMS_DESCRIPTION' | translate }}</p>
+
+    <div class="room-cards">
+      <div class="room-card" *ngFor="let room of rooms">
+        <div class="room-card-content">
+          <div class="room-image-container">
+            <img
+              *ngIf="room.selectedImage"
+              [src]="'/assets/images/' + room.selectedImage"
+              [alt]="room.roomType + ' Image'"
+              class="room-image"
+            />
+          </div>
+          <div class="room-info">
+            <h4 class="room-title">{{ room.roomType }}</h4>
+            <p class="room-description">{{ room.description }}</p>
+            <p class="room-price"><strong>{{ 'PRICE' | translate }}</strong> ${{ room.price }}</p>
+          </div>
+          <div class="room-buttons">
+            <button
+              nz-button
+              nzType="primary"
+              class="update-button"
+              [routerLink]="['/admin/update', room.id]"
+            >
+              {{ 'UPDATE' | translate }}
+            </button>
+            <button
+              nz-button
+              nzDanger
+              class="delete-button"
+              (click)="deleteRoomById(room.id)"
+            >
+              {{ 'DELETE' | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

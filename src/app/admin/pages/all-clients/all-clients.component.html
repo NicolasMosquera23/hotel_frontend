@@ -1,0 +1,53 @@
+<div class="clients-container">
+
+    <div class="clients-header">
+      <h3 class="clients-title">{{'CLIENT_TABLE_TITLE' | translate }}</h3>
+      <p class="clients-description">
+        {{'CLIENT_TABLE_DESCRIPTION' | translate }}
+      </p>
+    </div>
+
+    <div class="report-buttons"> 
+        <button nz-button nzType="primary" (click)="generateReport('clients')">
+            {{'CLIENTS_REPORT' | translate }}
+        </button> 
+    </div>
+  
+
+    <nz-table 
+      #basicTable 
+      [nzData]="clients"
+      [nzPageSize]="20" 
+      [nzShowPagination]="true"
+      class="styled-clients-table"
+    >
+      <thead>
+        <tr>
+          <th nzWidth="25%">{{'NAME' | translate }}</th>
+          <th nzWidth="25%">{{'LAST_NAME' | translate }}</th>
+          <th nzWidth="25%">{{'EMAIL' | translate }}</th>
+          <th nzWidth="25%">{{'PHONE' | translate }}</th>
+          <th nzWidth="25%">{{'ACTION' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let client of basicTable.data">
+          <td>{{ client.firstName }}</td>
+          <td>{{ client.lastName }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.phone }}</td>
+          <td>
+            <button 
+              nz-button 
+              nzDanger 
+              class="delete-button"
+              (click)="deleteClientById(client.id)"
+            >
+            {{'DELETE' | translate }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+  

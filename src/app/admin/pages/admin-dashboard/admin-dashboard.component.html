@@ -1,0 +1,75 @@
+<div class="admin-bookings-container">
+    <div class="table-header">
+      <h3 class="table-title">{{'ADMIN_TABLE_TITLE' | translate }}</h3>
+      <p class="table-description">
+        {{'ADMIN_TABLE_DESCRIPTION' | translate }}
+      </p>
+    </div>
+    <div class="report-buttons"> 
+      <button nz-button nzType="primary" (click)="generateReport('reservations')">
+        {{'RESERVATIONS_REPORT' | translate }}
+      </button> 
+    </div>
+
+    <nz-table
+    #basicTable 
+    [nzData]="bookings"
+    [nzPageSize]="20" 
+    [nzShowPagination]="true"
+    class="styled-bookings-table"
+    >
+    
+      <thead>
+        <tr>
+          <th nzWidth="10%">{{'CLIENT_NAME' | translate }}</th>
+          <th nzWidth="10%">{{'LAST_NAME' | translate }}</th>
+          <th nzWidth="5%">{{'ROOM_TYPE' | translate }}</th>
+          <th nzWidth="5%">{{'START_DATE' | translate }}</th>
+          <th nzWidth="5%">{{'END_DATE' | translate }}</th>
+          <th nzWidth="5%">{{'STATUS' | translate }}</th>
+          <th nzWidth="10%">{{'ACTION' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of basicTable.data">
+          <td>{{ booking.userName }}</td>
+          <td>{{ booking.userLastName }}</td>
+          <td>{{ booking.roomType }}</td>
+          <td>{{ booking.bookDate | date: "dd/MM/yyyy" }}</td>
+          <td>{{ booking.bookDateEnd | date: "dd/MM/yyyy" }}</td>
+          <td>{{ booking.reservationStatus }}</td>
+          <td>
+            <span *ngIf="booking.reservationStatus === 'PENDING'">
+              <button
+                nzSize="small"
+                nz-button
+                nzType="primary"
+                class="approve-button"
+                (click)="changeBookingStatus(booking.id, 'Approve')"
+              >
+              {{'APPROVE' | translate }}
+              </button>
+              <button
+                nzSize="small"
+                nz-button
+                nzType="primary"
+                nzDanger
+                class="reject-button"
+                (click)="changeBookingStatus(booking.id, 'Reject')"
+              >
+              {{'REJECT' | translate }}
+              </button>
+            </span>
+            <button nzSize="small" 
+            nz-button 
+            nzDanger 
+            class="delete-button" 
+            (click)="deleteReservation(booking.id)" > 
+            {{'DELETE' | translate }} 
+          </button>
+          </td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+  

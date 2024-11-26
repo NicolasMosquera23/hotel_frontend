@@ -1,0 +1,46 @@
+// Variables
+$primary-color: #2c3e50; // Dark blue
+$text-color: #34495e;   // Softer gray-blue
+$highlight-color: #ffd700; // Gold for highlights
+
+.about-us {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  color: $text-color;
+
+  // Header section
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 2.5rem;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  // Section styles
+  section {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-color;
+      max-width: 1400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

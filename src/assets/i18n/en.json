@@ -1,0 +1,143 @@
+{
+    "ADMIN_TABLE_TITLE": "Manage Bookings",
+    "ADMIN_TABLE_DESCRIPTION": "Review, approve, or reject booking requests quickly and efficiently.",
+    "RESERVATIONS_REPORT": "Generate Reservations Report",
+    "CLIENT_NAME": "Client Name",
+    "ROOM_TYPE": "Room Type",
+    "START_DATE": "Booking Start Date",
+    "END_DATE": "Booking End Date",
+    "STATUS": "Status",
+    "ACTION": "Action",
+    "APPROVE": "Approve",
+    "REJECT": "Reject",
+    "DELETE": "Delete",
+
+    "CLIENT_TABLE_TITLE": "Manage Clients",
+    "CLIENT_TABLE_DESCRIPTION": "Easily manage the details of all clients below.",
+    "CLIENTS_REPORT": "Generate Clients Report",
+    "NAME" : "Name",
+    "LAST_NAME": "Last name",
+    "EMAIL": "Email",
+    "PHONE": "Phone",
+
+    "ROOMS_TITLE": "Manage available rooms",
+    "ROOMS_DESCRIPTION": "Easily manage the available rooms and their details below.",
+    "PRICE": "Price:",
+    "DESCRIPTION" : "Description:",
+    "UPDATE": "Update",
+
+    "UPDATE_ROOM": "Update room",
+    "INPUT_REQUIRED" : "this input is required",
+
+    "WELCOME" : "WELCOME TO",
+    "HERO_INFO" : "Book your stay and enjoy Luxury redefined at the most affordable rates.",
+    "BOOK" : "BOOK NOW",
+    "FACILITIES" : "FACILITIES",
+    "FACILITIES_INFO" : "We want your stay at our lush hotel to be truly unforgettable. That is why we give special attention to all of your needs so that we can ensure an experience quite unique. Luxury hotels offer the perfect setting with stunning views for leisure, and our modern luxury resort facilities will help you enjoy the best of all.",
+    "GYM": "THE GYM",
+    "POOLSIDE" : "POOLSIDE BAR",
+    "SPA": "THE SPA",
+    "SWIMMING": "SWIMMING POOL",
+    "RESTAURANT": "RESTAURANT",
+    "LAUNDRY": "LAUNDRY",
+
+    "ROOM_INFO": "All our room types include complementary breakfast",
+    "LUXURY": "Luxury Redefined",
+    "LUXURY_INFO": "Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.",
+    "SAND": "Leave your worries in the sand",
+    "SAND_INFO": "We love life at the beach. Being close to the ocean with access to endless sandy beaches ensures a relaxed state of mind.",
+
+    "LOGIN" : "Log in",
+    "INTRODUCE_EMAIL": "Please introduce your email",
+    "INTRODUCE_PASSWORD": "Please introduce your password",
+    "PASSWORD": "Password",
+    "REGISTER_NOW": "Register Now!",
+
+    "ROOMS_SECTION_TITLE" : "ROOMS AND RATES",
+    "ROOMS_SECTION_INFO" : "Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay. And yes, comfort isn’t our only objective. We also value good design, sleek contemporary furnishings complemented by the rich tones of nature’s palette.",
+    "SINGLE_ROOM" : "SINGLE ROOM",
+    "AVG" : "Avg/Night",
+    "DOUBLE_ROOM" : "DOUBLE ROOM",
+
+    "WELCOME_TO": "Welcome to hotel Le paradi",
+    "CHOOSE_ROLE": "Choose your role",
+    "REGISTER_ADMIN" : "Register as administrator ",
+    "REGISTER_CLIENT" : "Register as client",
+
+    "SIGNUP_ADMIN" : "administrator signup",
+    "VALID_EMAIL" : "The input is not a valid email",
+    "VALID_PASSWORD" : "The input is not a valid password",
+    "MATCH_PASSWORD": "The input does not match or is not a valid password",
+    "VALID_NAME" : "The input is not a valid name",
+    "VALID_LASTNAME": "The input is not a valid lastname",
+    "VALID_PHONE": "The input is not a valid phone number",
+    "LOGIN_NOW" : "Log in now",
+    "CONFIRM_PASSWORD" : "Confirm your password",
+    "FULL_NAME" : "your full name",
+
+
+    "SIGNUP_CLIENT" : "Client sign up",
+
+    "ENTER_ROOM" : "Enter room type you need",
+    "SEARCH": "Search",
+    "NIGHT": "Night",
+
+    "BOOKED_SERVICES" : "Your Booked Services",
+    "BOOKED_SERVICES_INFO": "Below is a summary of your booked rooms and their current status.",
+
+    "HOME" : "Home",
+    "FACILITIES_M" : "Facilities",
+    "ROOMS" : "Rooms",
+    "REGISTER_M" : "Register",
+    "LOGIN_M" : "Login",
+    "DASHBOARD" : "Dashboard",
+    "BOOKINGS" : "Bookings",
+    "LOGOUT" : "Logout",
+    "CLIENTS" : "Clients",
+    "PUBLISH_ROOM" : "Publish room",
+    "ABOUT_US" : "About Us",
+    "TERMS" : "Terms & Conditions",
+    "ABOUT_US_INFO": "Discover the story behind our hotel.",
+    "OUR_HISTORY":"Our History",
+    "OUR_HISTORY_INFO": "Nestled in the heart of the countryside, Le Paradi Hotel began its journey in 1985 as a modest inn run by the Fernandez family. Inspired by their love for hospitality and a vision of creating a peaceful retreat for travelers, the family transformed their ancestral home into a sanctuary of warmth and relaxation. From the very beginning, their philosophy was simple: treat every guest as part of the family. In the early years, the inn had only six rooms, each carefully designed to reflect the rustic charm of the surrounding landscape. Guests would gather around the fireplace in the evenings, sharing stories, enjoying home-cooked meals, and forming bonds that turned fleeting stays into lifelong memories. Word of mouth spread quickly, and soon, the little inn began welcoming guests from all over the country. By the mid-1990s, as tourism in the region flourished, so did Le Paradi. The Fernandez family reinvested in their dream, adding more rooms, a dining hall, and gardens inspired by the lush greenery of the nearby hills. The transformation from a quaint inn to a boutique hotel was a labor of love, and every brick laid carried the family’s commitment to quality and care.",
+    "OUR_COMMITMENT": "Our Commitment",
+    "OUR_COMMITMENT_INFO" : "Today, Le paradi Hotel stands as a symbol of timeless elegance and heartfelt hospitality. We pride ourselves on offering not just a place to sleep but a home away from home. Each guest room is designed with comfort and tranquility in mind, while our staff is trained to anticipate your needs and ensure your stay is nothing short of extraordinary. We are also deeply committed to sustainability and community engagement. By sourcing ingredients from local farmers, minimizing our environmental footprint, and supporting regional artisans, we strive to create a positive impact that extends far beyond our walls. Le Paradi Hotel is more than just a destination – it’s a story of passion, perseverance, and the belief that every journey deserves a perfect ending. Whether you’re here for a weekend escape, a family reunion, or a quiet retreat, we invite you to become part of our story and create cherished memories that will last a lifetime.",
+    "TRANSLATE" : "Translate",
+
+    "CREATE_ROOM" : "Create a room",
+    "ADD": "Add",
+
+    "TERMS_INFO" : "Welcome to Le Paradi Hotel. By accessing and using our website or services, you agree to comply with the terms and conditions outlined below. Please read them carefully as they govern your use of our platform and the services we provide.",
+    "GENERAL_USE": "1. General Use",
+    "GENERAL_USE_INFO" : "All users of this website agree that their access and use are subject to the terms and conditions set forth herein and all applicable laws. Le Paradi Hotel reserves the right to modify or update these terms at any time without prior notice. Your continued use of our services indicates your acceptance of such changes.",
+    "RESERVATIONS": "2. Reservations",
+    "RESERVATIONS_INFO" : "All reservations made through our platform are subject to availability. A valid credit card is required at the time of booking. Changes or cancellations must be made in accordance with our cancellation policy, which may vary depending on the rate or package selected.",
+    "RESPONSABILITIES": "3. Guest Responsibilities",
+    "RESPONSABILITIES_INFO": "Guests are expected to maintain the property in good condition and use all facilities responsibly. Any damage caused by the guest or their party will result in charges to cover the cost of repairs or replacements.",
+    "PRIVACY" : "4. Privacy Policy",
+    "PRIVACY_INFO" : "We value your privacy and are committed to protecting your personal information. By using our services, you consent to the collection, use, and disclosure of your data as outlined in our Privacy Policy.",
+    "LIMITATION" : "5. Limitation of Liability",
+    "LIMITATION_INFO" : "Le Paradi Hotel shall not be held liable for any direct, indirect, incidental, or consequential damages resulting from your use of our website or services. This includes, but is not limited to, loss of data, profits, or business opportunities.",
+    "LAW": "6. Governing Law",
+    "LAW_INFO": "These terms and conditions are governed by the laws of USA. Any disputes arising from the use of our services shall be resolved exclusively by the courts of USA.",
+    "CONTACT" : "7. Contact Us",
+    "CONTACT_INFO" : "If you have any questions regarding these Terms and Conditions, please contact us at support_leparadi.com or visit our reception desk for assistance.",
+    "THANK" : "Thank you for choosing Le Paradi Hotel. We look forward to serving you!"
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+}

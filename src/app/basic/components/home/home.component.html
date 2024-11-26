@@ -1,0 +1,45 @@
+<div class="home-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>{{'WELCOME' | translate }}</h1>
+        <h2>LE PARADI HOTEL</h2>
+        <p>{{'HERO_INFO' | translate }}</p>
+        <button nz-button nzType="primary" nzSize="large" class="book-now"  routerLink="/login">
+          <i nz-icon nzType="calendar" nzTheme="outline"></i> {{'BOOK' | translate }}
+        </button>
+      </div>
+    </div>
+  
+    <!-- Rooms Section -->
+    <div class="rooms-section">
+      <h3>{{'ROOM_INFO' | translate }}</h3>
+      <div nz-row [nzGutter]="16">
+        <div nz-col [nzSpan]="24">
+          <div class="room-card">
+            <img src="assets/images/room1.jpg" alt="Room 1" class="room-image" />
+            <div class="room-content">
+              <h4>{{'LUXURY' | translate }}</h4>
+              <p>
+                {{'LUXURY_INFO' | translate }}
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div nz-col [nzSpan]="24">
+          <div class="room-card">
+            <img src="assets/images/beach.jpg" alt="Beach View" class="room-image" />
+            <div class="room-content">
+              <h4>{{'SAND' | translate }}</h4>
+              <p>
+                {{'SAND_INFO' | translate }}
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,72 @@
+<div class="rooms-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>{{'WELCOME' | translate }}</h1>
+        <h2>LE PARADI HOTEL</h2>
+        <p>{{'HERO_INFO' | translate }}</p>
+      </div>
+    </div>
+  
+    <!-- Search Section -->
+    <form
+      nz-form
+      [formGroup]="validateForm"
+      (submit)="searchRoomByType()"
+      class="search-form"
+    >
+      <input
+        nz-input
+        placeholder="{{'ENTER_ROOM' | translate }}"
+        nzSize="large"
+        formControlName="service"
+        class="search-input"
+      />
+      <button
+        nz-button
+        nzSize="large"
+        nzType="primary"
+        [disabled]="validateForm.invalid"
+        class="search-button"
+      >
+      {{'SEARCH' | translate }}
+      </button>
+    </form>
+  
+    <!-- Rooms Section -->
+    <div class="rooms-section">
+      <h3 class="section-title">{{'ROOMS_SECTION_TITLE' | translate }}</h3>
+      <p class="section-description">
+        {{'ROOMS_SECTION_INFO' | translate }}
+      </p>
+  
+      <div class="room-cards">
+        <div class="room-card" *ngFor="let room of rooms">
+          <div class="room-card-content">
+            <div class="room-image-container">
+              <img 
+      *ngIf="room.selectedImage" 
+      [src]="'/assets/images/' + room.selectedImage" 
+      [alt]="room.roomType + ' Image'" 
+      class="room-image" />
+            </div>
+            <div class="room-info">
+              <h4>{{ room.roomType }}</h4>
+              <p>{{ room.description }}</p>
+              <div class="room-buttons">
+                <button
+                  nz-button
+                  nzType="primary"
+                  class="price-button"
+                  [routerLink]="['/client/room', room.id]"
+                >
+                  ${{ room.price }} / {{'NIGHT' | translate }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

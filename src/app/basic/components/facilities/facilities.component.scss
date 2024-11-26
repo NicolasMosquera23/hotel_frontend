@@ -1,0 +1,121 @@
+$primary-color: #3498db;
+$overlay-color: rgba(0, 0, 0, 0.6);
+$font-primary: "Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif";
+.page-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  
+    @mixin flex-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .hero-section {
+        background: url('/assets/images/hero.jpg') no-repeat center center/cover;
+        position: relative;
+        color: white;
+        height: 500px;
+        @include flex-center;
+        background-size: cover;
+        background-position: center center;
+      
+  
+      .hero-content {
+        text-align: left;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 37%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+  
+        h1 {
+            color: white;
+          font-size: 2rem;
+          margin: 0;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+        }
+  
+        h2 {
+            color: white;
+          font-size: 3rem;
+          font-weight: bold;
+          margin: 1rem 0;
+        }
+  
+        p {
+          font-size: 1.2rem;
+          margin: 1.5rem 0;
+        }
+  
+        .book-now {
+          background-color: #d4b078;
+          border: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 12px 24px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          &:hover {
+            background-color: #b69262;
+          }
+        }
+      }
+  
+      
+    }
+  
+    .facilities-section {
+        padding: 4rem 2rem;
+        text-align: center;
+      
+        h2 {
+          font-size: 2rem;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+      
+        p {
+          font-size: 1.2rem;
+          line-height: 1.8;
+          max-width: 1000px;
+          margin: 0 auto 3rem;
+        }
+      
+        .facility {
+          margin: 2rem auto;
+          max-width: 1000px;
+          background-color: #ffffff;
+          border: 1px solid #e0e0e0; /* Leve borde claro */
+          border-radius: 10px; /* Esquinas redondeadas */
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+          overflow: hidden; /* Asegura que los bordes redondeados apliquen correctamente */
+          transition: transform 0.3s, box-shadow 0.3s;
+      
+          &:hover {
+            transform: translateY(-5px); /* Efecto de elevación */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el mouse */
+          }
+      
+          img {
+            width: 100%;
+            display: block;
+          }
+      
+          h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            text-transform: uppercase;
+            color: #333;
+          }
+      
+          padding: 1rem; /* Espaciado alrededor del texto */
+        }
+      }
+      
+  }
+  

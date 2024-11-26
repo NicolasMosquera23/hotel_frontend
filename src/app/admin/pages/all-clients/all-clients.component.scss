@@ -1,0 +1,28 @@
+.clients-container {
+    padding: 20px;
+  }
+  
+  .clients-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .clients-title {
+    font-size: 24px;
+  }
+  
+  .clients-description {
+    font-size: 14px;
+  }
+  
+  .styled-clients-table {
+    width: 100%;
+    .nz-table {
+      width: 100%;
+    }
+  }
+  
+  .update-button, .delete-button {
+    margin-right: 8px;
+  }
+  

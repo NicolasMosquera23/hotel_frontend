@@ -1,0 +1,43 @@
+<div style="background-color: #f8f8f8;">
+    <div class="parent">
+      <div class="child">
+        <div nz-row class="imgDiv">
+          <h2 style="margin-left: 230px">{{ 'CREATE_ROOM' | translate }}</h2>
+        </div>
+  
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="publishRoom()">
+          <div nz-row>
+            <div nz-col nzSpan="24" style="margin-top: 20px">
+              <nz-form-item>
+                <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="this input is required">
+                  <input nz-input placeholder="{{ 'ROOM_TYPE' | translate }}" formControlName="roomType" />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+  
+            <div nz-col nzSpan="24">
+              <nz-form-item>
+                <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="this input is required">
+                  <input nz-input placeholder="{{ 'PRICE' | translate }}" formControlName="price" type="number" />
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+  
+            <div nz-col nzSpan="24">
+              <nz-form-item>
+                <nz-form-control nzHasFeedback [nzXs]="24" nzErrorTip="this input is required">
+                  <textarea rows="1" nz-input placeholder="{{ 'DESCRIPTION' | translate }}" formControlName="description"></textarea>
+                </nz-form-control>
+              </nz-form-item>
+            </div>
+  
+          </div>
+  
+          <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">
+            {{ 'ADD' | translate }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

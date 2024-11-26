@@ -1,0 +1,72 @@
+<div class="bg" *ngIf="room">
+    <div class="ad-details-container">
+      <!-- Sección superior -->
+      <div class="top-section">
+        <!-- Detalle de la habitación -->
+        <div class="room-detail">
+          <div class="room-image-container">
+            <img
+              *ngIf="selectedImage"
+              [src]="'/assets/images/' + selectedImage"
+              alt="Room Image"
+              class="room-image"
+            />
+          </div>
+          <div>
+            <h2 class="room-title">{{ room.roomType }}</h2>
+            <h5 class="room-description">
+              Precio: <b>${{ room.price }}</b>
+            </h5>
+            <h5 class="room-description">
+              Descripción: <b>{{ room.description }}</b>
+            </h5>
+          </div>
+        </div>
+  
+        <!-- Sistema de reservas -->
+        <div class="book-service">
+            <div class="book-service-form">
+              <h2>Reservar habitación</h2>
+              <form nz-form [formGroup]="validateForm">
+                <!-- Fecha inicio (Horizontal) -->
+                <div class="form-item-horizontal">
+                  <nz-form-label nzFor="bookDate" class="text-form">
+                    <h3>
+                        Inicio de la reserva
+                    </h3>
+                </nz-form-label>
+                  <nz-form-control>
+                    <nz-date-picker formControlName="bookDate" id="bookDate"></nz-date-picker>
+                  </nz-form-control>
+                </div>
+          
+                <!-- Fecha fin (Horizontal) -->
+                <div class="form-item-horizontal">
+                  <nz-form-label nzFor="bookDateEnd" class="text-form">
+                    <h3>
+                        Fin de la reserva
+                    </h3>
+                </nz-form-label>
+                  <nz-form-control>
+                    <nz-date-picker formControlName="bookDateEnd" id="bookDateEnd"></nz-date-picker>
+                  </nz-form-control>
+                </div>
+          
+                <!-- Botón de reserva -->
+                <button
+                  nz-button
+                  [nzType]="'primary'"
+                  [disabled]="validateForm.invalid"
+                  (click)="bookService()"
+                  class="book-button"
+                >
+                  Reservar
+                </button>
+              </form>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  

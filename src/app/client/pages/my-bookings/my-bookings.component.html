@@ -1,0 +1,33 @@
+<div class="booked-services-container">
+    <div class="table-header">
+      <h3 class="table-title">{{'BOOKED_SERVICES' | translate }}</h3>
+      <p class="table-description">
+        {{'BOOKED_SERVICES_INFO' | translate }}
+      </p>
+    </div>
+    <nz-table
+      [nzData]="bookedServices"
+      #basicTable
+      [nzPageSize]="20"
+      [nzShowPagination]="false"
+      class="styled-table"
+    >
+      <thead>
+        <tr>
+          <th>{{'ROOM_TYPE' | translate }}</th>
+          <th>{{'START_DATE' | translate }}</th>
+          <th>{{'END_DATE' | translate }}</th>
+          <th>{{'STATUS' | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let booking of basicTable.data">
+          <td>{{ booking.roomType }}</td>
+          <td>{{ booking.bookDate | date: 'dd/MM/yyyy' }}</td>
+          <td>{{ booking.bookDateEnd | date: 'dd/MM/yyyy' }}</td>
+          <td>{{ booking.reservationStatus }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+  

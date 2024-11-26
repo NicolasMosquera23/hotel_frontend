@@ -1,0 +1,77 @@
+<div class="rooms-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>{{'WELCOME' | translate }}</h1>
+        <h2>LE PARADI HOTEL</h2>
+        <p>{{'HERO_INFO' | translate }}</p>
+        <button nz-button nzType="primary" nzSize="large" class="book-now" routerLink="/login">
+          <i nz-icon nzType="calendar" nzTheme="outline"></i> {{'BOOK' | translate }}
+        </button>
+      </div>
+    </div>
+  
+    <!-- Rooms and Rates Section -->
+    <div class="rooms-section">
+      <h3 class="section-title">ROOMS AND RATES</h3>
+      <p class="section-description">
+        Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay.
+        And yes, comfort isn’t our only objective. We also value good design, sleek contemporary furnishings complemented
+        by the rich tones of nature’s palette.
+      </p>
+  
+      <!-- Room Cards -->
+      <div nz-row [nzGutter]="16" class="room-cards">
+        <!-- Single Room -->
+        <div nz-col [nzSpan]="24" class="room-card">
+          <nz-card class="room-card-content">
+            <div class="room-image-container">
+              <img src="/assets/images/single-room.jpg" alt="Single Room" class="room-image" />
+            </div>
+            <div class="room-info">
+              <h4>SINGLE ROOM</h4>
+              <div class="room-buttons">
+                <button nz-button nzType="primary" class="price-button">
+                  $147 Avg/Night
+                </button>
+              </div>
+            </div>
+          </nz-card>
+        </div>
+  
+        <!-- Double Room -->
+        <div nz-col [nzSpan]="24" class="room-card">
+          <nz-card class="room-card-content">
+            <div class="room-image-container">
+              <img src="assets/images/double-room.jpg" alt="Double Room" class="room-image" />
+            </div>
+            <div class="room-info">
+              <h4>DOUBLE ROOM</h4>
+              <div class="room-buttons">
+                <button nz-button nzType="primary" class="price-button">
+                  $185 Avg/Night
+                </button>
+              </div>
+            </div>
+          </nz-card>
+        </div>
+
+        <div nz-col [nzSpan]="24" class="room-card">
+            <nz-card class="room-card-content">
+              <div class="room-image-container">
+                <img src="assets/images/twin-room.jpg" alt="Twin Room" class="room-image" />
+              </div>
+              <div class="room-info">
+                <h4>TWIN ROOM</h4>
+                <div class="room-buttons">
+                  <button nz-button nzType="primary" class="price-button">
+                    $185 Avg/Night
+                  </button>
+                </div>
+              </div>
+            </nz-card>
+          </div>
+      </div>
+    </div>
+  </div>
+  
