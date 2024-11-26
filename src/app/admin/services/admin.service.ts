@@ -27,8 +27,7 @@ export class AdminService {
   }
 
   getAllRoomsByUserId(): Observable<any> {
-    const userId = UserStorageService.getUserId();
-    return this.http.get(`${BASIC_URL}api/admin/rooms/${userId}`, {
+    return this.http.get(`${BASIC_URL}api/admin/rooms`, {
       headers: this.createAuthorizationHeader()
     });
   }
@@ -76,12 +75,12 @@ export class AdminService {
     });
    }
 
-  getAllRoomBookings(): Observable<any> {
-    const adminId = UserStorageService.getUserId();
-    return this.http.get(`${BASIC_URL}api/admin/bookings/${adminId}`, {
-      headers: this.createAuthorizationHeader()
+   getAllRoomBookings(): Observable<any> {
+    return this.http.get(`${BASIC_URL}api/admin/bookings`, {
+        headers: this.createAuthorizationHeader()
     });
-  }
+}
+
 
   changeBookingStatus(bookingId: number, status: string): Observable<any> {
     return this.http.get(`${BASIC_URL}api/admin/booking/${bookingId}/${status}`, {

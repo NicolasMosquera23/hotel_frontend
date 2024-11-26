@@ -40,9 +40,12 @@ export class clientDashboardComponent {
   }
 
   searchRoomByType(){
-    this.clientservice.searchRoomByType(this.validateForm.get(['service']).value).subscribe(res=>{
-      this.rooms = res;
-    })
+    this.clientservice.searchRoomByType(this.validateForm.get(['service']).value).subscribe((res: any)=>{
+      this.rooms = res.map((room: any) => ({
+        ...room,
+        selectedImage: this.roomTypeImages[room.roomType] || 'default-room.jpg'
+      }));
+    });
   }
 
 

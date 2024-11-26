@@ -7,7 +7,6 @@ import { clientDashboardComponent } from './pages/client-dashboard/client-dashbo
 import { DemoNgZorroAntdModule } from '../DemoNgZorroAntdModule';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyBookingsComponent } from './pages/my-bookings/my-bookings.component';
-import { ReviewComponent } from './pages/review/review.component';
 import { RoomDetailComponent } from './pages/room-detail/room-detail.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -18,7 +17,6 @@ import { TranslateModule } from '@ngx-translate/core';
     clientDashboardComponent,
     RoomDetailComponent,
     MyBookingsComponent,
-    ReviewComponent,
     
   ],
   imports: [

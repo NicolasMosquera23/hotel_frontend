@@ -43,12 +43,6 @@ export class ClientService {
     });
   }
 
-  // Dejar una reseña
-  giveReview(reviewDTO: any): Observable<any> {
-    return this.http.post(`${BASIC_URL}api/client/review`, reviewDTO, {
-      headers: this.createAuthorizationHeader()
-    });
-  }
 
   // Obtener mis reservas
   getMyBookings(): Observable<any> {

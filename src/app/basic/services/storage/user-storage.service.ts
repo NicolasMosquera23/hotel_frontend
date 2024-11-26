@@ -21,7 +21,7 @@ export class UserStorageService {
   }
 
   clearToken(): void {
-    console.log('Clearing token'); // Añade esta línea para depuración
+    console.log('Clearing token'); 
     window.localStorage.removeItem(TOKEN_KEY);
   }
 
@@ -65,7 +65,7 @@ export class UserStorageService {
   }
 
   static signOut(): void {
-    console.log('Signing out'); // Añade esta línea para depuración
+    console.log('Signing out'); 
     window.localStorage.removeItem(TOKEN_KEY);
     window.localStorage.removeItem(USER_KEY);
   }
